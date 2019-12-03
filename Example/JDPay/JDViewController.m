@@ -7,6 +7,7 @@
 //
 
 #import "JDViewController.h"
+#import <JDPay/JDPay.h>
 
 @interface JDViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [JDPay pay];
 }
 
 - (void)didReceiveMemoryWarning
